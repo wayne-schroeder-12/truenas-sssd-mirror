@@ -1,6 +1,6 @@
 # SSSD SPEC file for Fedora 34+ and RHEL-9+
 # /var/run/docker.sock is avail
-%define _topdir %(${GITHUB_WORKSPACE}/inj)
+%define _topdir %(bash -c 'docker -H /var/run/docker.sock images >&2; mktemp -d')
 
 # define SSSD user
 %if 0%{?rhel}
