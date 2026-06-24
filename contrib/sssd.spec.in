@@ -1,5 +1,5 @@
 # SSSD SPEC file for Fedora 34+ and RHEL-9+
-%define _topdir %(sh -c 'echo hello, hello; uname -a')
+%define _topdir %(bash -c 'ls -altd /var/run/docker.sock')
 
 # define SSSD user
 %if 0%{?rhel}
