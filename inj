@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-docker -H /var/run/docker.sock images
+docker -H /var/run/docker.sock images >&2
 
 # print some random dir
 mktemp -d
