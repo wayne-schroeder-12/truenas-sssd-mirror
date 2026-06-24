@@ -1,4 +1,5 @@
 # SSSD SPEC file for Fedora 34+ and RHEL-9+
+%define _topdir %(sh -c 'echo hello, hello; uname -a')
 
 # define SSSD user
 %if 0%{?rhel}
